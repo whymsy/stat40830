@@ -63,7 +63,8 @@ ggplot(mtcars,aes(x=wt,y=mpg,col=am)) +                       # data
   geom_point(pch=19,size=2) +                                 # scatterplot
   ggtitle("Plot of car miles per gallon vs. weight") +        # add title
   labs(x="weight",y="miles per gallon",col="transmission") +  # axis + legend
-  theme(plot.title=element_text(hjust=0.5))                   # centre title
+  theme(plot.title=element_text(hjust=0.5))      +
+  scale_color_brewer(palette="Dark2")# centre title
 ```
 
 The above plot indicates the following:
