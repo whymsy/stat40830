@@ -2,6 +2,7 @@
 title: "STAT40830 Homework 1"
 author: "David Whyms"
 date: today
+date-format: medium
 format: pdf
 editor: visual
 ---
@@ -25,17 +26,17 @@ mtcars$vs<-factor(mtcars$vs,levels=c(0,1),labels=c("v-shaped","straight"))
 
 The mtcars dataset contains data on 32 different cars. The dataset features the following 11 variables:
 
--	**mpg**:	Miles/(US) gallon
--	**cyl**:	Number of cylinders
--	**disp**:	Displacement *(cu.in.)*
--	**hp**:	Gross horsepower
--	**drat**:	Rear axle ratio
--	**wt**:	Weight (1000 lbs)
--	**qsec**:	1/4 mile time
--	**vs**:	Engine *(0 = V-shaped, 1 = straight)*
--	**am**:	Transmission *(0 = automatic, 1 = manual)*
--	**gear**:	Number of forward gears
--	**carb**:	Number of carburetors
+-   **mpg**: Miles/(US) gallon
+-   **cyl**: Number of cylinders
+-   **disp**: Displacement *(cu.in.)*
+-   **hp**: Gross horsepower
+-   **drat**: Rear axle ratio
+-   **wt**: Weight (1000 lbs)
+-   **qsec**: 1/4 mile time
+-   **vs**: Engine *(0 = V-shaped, 1 = straight)*
+-   **am**: Transmission *(0 = automatic, 1 = manual)*
+-   **gear**: Number of forward gears
+-   **carb**: Number of carburetors
 
 The following are summary statistics listed for the `mtcars` dataset:
 
@@ -67,6 +68,6 @@ ggplot(mtcars,aes(x=wt,y=mpg,col=am)) +                       # data
 
 The above plot indicates the following:
 
-- The relationship between weight and miles per gallon generally decreases. As the weight of a car increases, the miles per gallon is likely to decrease, and vice-versa.
+-   The relationship between weight and miles per gallon generally decreases. As the weight of a car increases, the miles per gallon is likely to decrease, and vice-versa.
 
-- Generally, an automatic car tends to have a higher weight than a manual car. As the previous point would imply, this also indicates that an automatic car is likely to have a lower miles-per-gallon than a manual car.
+-   Generally, an automatic car tends to have a higher weight than a manual car. As the previous point would imply, this also indicates that an automatic car is likely to have a lower miles-per-gallon than a manual car.
